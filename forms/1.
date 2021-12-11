@@ -1,0 +1,173 @@
+<html>
+
+<head>
+    <style>
+        h1 {
+            color: black;
+
+        }
+
+
+        input[type=submit] {
+            background-color: rgb(247, 240, 240);
+            color: black;
+            margin-left: 170px;
+            font-weight: bold;
+        }
+
+        .div1 {
+            border: 5px outset black;
+            position: absolute;
+
+
+        }
+
+
+        caption {
+            padding-bottom: 15px;
+            font-family: arial;
+        }
+    </style>
+
+</head>
+<div class="div1">
+
+    <body>
+        <table style="border-collapse: collapse;width:500px">
+            <form>
+
+
+
+                <table style="padding-left:10px;padding-right:10px;font-family: arial;">
+                    <caption
+                        style="text-align:justify;margin-left: 8px;padding-top: 3px;font-family: none;font-size: 30px;">
+                        <b>Registration Form</b></caption>
+                    <tr>
+                        <td align="justify" style="padding-top: 10px;padding-bottom: 10px;"
+                            padding-left:10px;padding-right:10px"><label for="id">&nbsp&nbsp&nbsp&nbspUser id:</label>
+                        </td>
+                        <td style="padding-top: 10px;padding-bottom: 10px;">
+                            <input style="border:1px solid #5baff0;height: 20px;width:100px" type="text" name="id"
+                                size="5" maxlength="12" required></input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="justify" style="padding-top: 10px;padding-bottom: 10px;"><label
+                                for="password">Password:</label>
+                        </td>
+                        <td style="padding-top: 10px;padding-bottom: 10px;">
+                            <input style="border:1px solid #5baff0;height: 20px;width:100px" type="password"
+                                name="password" size="7" maxlength="12" required></input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="justify" style="padding-top: 10px;padding-bottom: 10px;"><label
+                                for="name">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName:</label></td>
+                        <td style="padding-top: 10px;padding-bottom: 10px;">
+                            <input style="border:1px solid #5baff0;height: 20px;width:350px" type="text" name="name"
+                                pattern="[A-Za-z]{1,100}" required></input>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="justify" style="padding-top: 10px;padding-bottom: 10px;"><label
+                                for="address">&nbsp&nbsp&nbspAddress:</label>
+                        </td>
+                        <td align="left" style="padding-top: 10px;padding-bottom: 10px;">
+                            <input style="border:1px solid #5baff0;height: 20px;width:350px" type="text"
+                                name="address"></input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="justify" style="padding-top: 10px;padding-bottom: 10px;"><label
+                                for="country">&nbsp&nbsp&nbsp&nbspCountry:</label>
+                        </td>
+                        <td align="left" style="padding-top: 10px;padding-bottom: 10px;">
+                            <select style="border:1px solid #5baff0;height: 20px;width:190px"" name=" country" size="1"
+                                required>
+                                <option value=" bangladesh">Bangladesh</option>
+                                <option value=" india">India</option>
+                                <option value="turkey ">Turkey</option>
+                                <option value=" japan">Japan</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="justify" style="padding-top: 10px;padding-bottom: 10px;"><label
+                                for="zipcode">&nbspZIP Code:
+                            </label></td>
+                        <td align="left" style="padding-top: 10px;padding-bottom: 10px;">
+
+                            <input style="border:1px solid #5baff0;" type="text" name="zipcode" pattern="[0-9]{3}"
+                                required></input>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="justify style=" padding-top: 10px;padding-bottom: 10px;"><label
+                                for="email">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspEmail:</label></td>
+                        <td align="left" style="padding-top: 10px;padding-bottom: 10px;">
+                            <input style="border:1px solid #5baff0;height: 20px;width:350px" type="email" name="email"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></input>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td align="justify" style="padding-top: 10px;padding-bottom: 10px;"><label
+                                for="sex">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSex:</label>
+                        </td>
+
+                        <td align="left" style="padding-top: 10px;padding-bottom: 10px;"> <input type="radio"
+                                name="male">Male
+
+
+                            <input type="radio" name="female">Female
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="justify" style="padding-top: 10px;padding-bottom: 10px;"><label
+                                for="language">Language:</label>
+                        </td>
+
+                        <td align="left" style="padding-top: 10px;padding-bottom: 10px;"> <input type="checkbox"
+                                name="english">English
+
+
+                            <input type="checkbox" name="nonenglish">Non English
+                        </td>
+                    </tr>
+
+
+
+
+
+
+                    <tr>
+                        <td align="justify" style="position: absolute;padding-top: 10px;padding-bottom: 10px;"><label
+                                for="about">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAbout:</label>
+                        </td>
+
+
+                        <td style="padding-top: 10px;padding-bottom: 10px;" align="left"><textarea
+                                style="border:1px solid #5baff0;" name="about" cols="50" rows="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="padding-top:20px;"> <input
+                                style="border:1px solid #5baff0;margin-right: 50px;" type="submit"
+                                name="submit"></input>
+                        </td>
+                    </tr>
+                </table>
+
+
+
+
+
+            </form>
+        </table>
+    </body>
+</div>
+
+</html>
