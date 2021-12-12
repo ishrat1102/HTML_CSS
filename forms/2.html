@@ -1,0 +1,224 @@
+<html>
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0px;
+        }
+
+        p {
+            margin-right: 50px;
+            padding: 4px 10px;
+        }
+
+        .div0 {
+            border: 5px outset black;
+            position: absolute;
+
+        }
+        }
+
+        table {
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+
+            color: yellow;
+            width: 500px;
+
+        }
+
+        input[type=submit] {
+            background-color: rgb(29, 160, 29);
+            color: rgb(255, 255, 255);
+            margin-left: 160px;
+            border: none;
+            font-weight: bold;
+            padding: 4px 10px;
+            border-radius: 4px;
+
+        }
+
+        input[type=button] {
+            background-color: rgb(228, 47, 47);
+            color: rgb(255, 255, 255);
+            border: none;
+            font-weight: 500;
+            border-radius: 4px;
+            padding: 4px 10px;
+           
+
+        }
+
+        
+        td,
+        th {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 40px;
+        }
+    </style>
+
+</head>
+<div class="div0">
+
+    <form>
+        <table border="2.5" style="border-collapse: collapse;border-color:white;font-family: sans-serif;">
+            <tr>
+                <th bgcolor="orange" style="padding-top: 10px;padding-bottom: 10px;color: yellow;font-family: sans-serif;" align="left">Sign Up</th>
+            </tr>
+            <tr>
+                <td style=" background-color: rgb(16, 17, 70);">
+                    <table style=" background-color: rgb(16, 17, 70);color:yellow;">
+                        <tr>
+                            <td align="right"><label for="fname">First Name</label></td>
+
+                            <td><input style="border-radius:4px ;height: 35px;width:250px" type="textbox" name="fname"
+                                    placeholder="Enter First Name" required></input></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="lname">Last Name</label></td>
+                            <td>
+                                <input style="border-radius:4px ;height: 35px;width:250px" type="textbox" name="lname"
+                                    placeholder="Enter Last Name" required></input></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="sname">Screen Name</label></td>
+                            <td>
+                                <input style="border-radius:4px ;height: 35px;width:250px" type="textbox" name="sname"
+                                    placeholder="Enter Screen Name" required></input></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="dob">Date of Birth</label>
+                            </td>
+                            <td>
+                                <select style="border-radius:4px ;height: 35px;width:80px" name="month" size="1"
+                                    required>
+                                    <option value=" January">January</option>
+                                    <option value=" February">February</option>
+                                    <option value="March ">March</option>
+                                    <option value=" April">April</option>
+                                    <option value=" May">May</option>
+                                    <option value=" June">June</option>
+                                    <option value=" July">July</option>
+                                    <option value=" August">August</option>
+                                    <option value=" September">September</option>
+                                    <option value=" October">October</option>
+                                    <option value=" November">November</option>
+                                    <option value=" December">December</option>
+                                </select>
+                                <select style="border-radius:4px ;height: 35px;width:50px" name="Day" size="1" required>
+                                    <option value=" 1">1</option>
+                                    <option value=" 2">2</option>
+                                    <option value="3 ">3</option>
+                                    <option value=" 4">4</option>
+                                    <option value=" 5">5</option>
+                                    <option value=" 6">6</option>
+                                    <option value=" 7">7</option>
+                                    <option value=" 8">8</option>
+                                    <option value=" 9">9</option>
+                                    <option value=" 10">10</option>
+                                    <option value="11">11</option>
+                                    <option value=" 12">12</option>
+                                </select>
+                                <select style="border-radius:4px ;height: 35px;width:80px" name="Year" size="1"
+                                    required>
+                                    <option value=" 1990">1990</option>
+                                    <option value=" 1991">1991</option>
+                                    <option value="1992">1992</option>
+                                    <option value=" 1993">1993</option>
+                                    <option value="1994">1994</option>
+                                    <option value=" 1995">1995</option>
+                                    <option value=" 1996">1996</option>
+                                    <option value=" 1997">1997</option>
+                                    <option value=" 1998">1998</option>
+                                    <option value=" 1999">1999</option>
+                                    <option value="2000">2000</option>
+                                    <option value=" 2001">2001</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="gen">Gender</label>
+                            </td>
+
+                            <td> <input type="radio" name="male">Male
+
+
+                                <input type="radio" name="female">Female</td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="country">Country</label>
+                            </td>
+                            <td>
+                                <select style="border-radius:4px ;height: 35px;width:250px" name="country" size="1"
+                                    required>
+                                    <option value=" USA">USA</option>
+                                    <option value=" Bangladesh">Bangladesh</option>
+                                    <option value="Turkey ">Turkey</option>
+
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="email">Email:</label></td>
+                            <td>
+                                <input style="border-radius:4px ;height: 35px;width:250px" type="email" name="email"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter Email"></input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="phone">Phone</label></td>
+                            <td>
+                                <input style="border-radius:4px ;height: 35px;width:250px" type="textbox" name="phone"
+                                    placeholder="Enter Phone" pattern="[0-9]{11}" required></input></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><label for="password">Password:</label>
+                            </td>
+                            <td>
+                                <input style="border-radius:4px ;height: 35px;width:250px" type="password"
+                                    name="password" required></input></td>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><label for="cpassword">Confirm Password:</label>
+                </td>
+                <td>
+                    <input style="border-radius:4px ;height: 35px;width:250px" type="password" name="cpassword"
+                        required></input></td>
+                </td>
+                </td>
+            </tr>
+
+            <tr>
+                <td>&nbsp</td>
+                <td> <input type="checkbox" name="agree">I agree to the terms of Use</td>
+            </tr>
+
+        </table>
+    </form>
+    </td>
+    </tr>
+    <tr>
+
+
+        <td align="left" bgcolor="orange" colspan="2" style="padding-top: 10px;padding-bottom: 10px;">
+            <input style="margin-left:425px;" type="submit" name="submit">
+        <input type="button" value="Cancel" onclick="msg()">
+        </td>
+    </tr>
+    </table>
+    </form>
+    <script>
+        function msg() {
+            alert("Cancelled!");
+        }
+    </script>
+
+    </body>
+</div>
+
+
+
+</html>
