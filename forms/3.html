@@ -1,0 +1,214 @@
+<html>
+
+<head>
+    <styLe>
+        body {
+            font-family: sans-serif;
+        }
+        * {
+            margin: 0;
+            padding: 0px;
+        }
+        .div1{
+            border: 5px outset black;
+            position: absolute;
+            
+        }
+
+
+        .req:after {
+            content: "* ";
+            color: red;
+        }
+
+        input[type=submit] {
+            background-color: #7bba99;
+            color: white;
+            border: none;
+            font-weight: bold;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        input[type=reset] {
+            background-color: #7bba99;
+            color: white;
+            border: none;
+            font-weight: bold;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 15px;
+            padding-right: 15px;}
+    </styLe>
+</head>
+<div class="div1">
+<body>
+    <table  id="t1" style="border-collapse: collapse;outline-width:15px ;outline-color: black; padding-top: 10px; padding-bottom: 10px;padding-right: 10px;padding: 10px;">
+        <tr>
+            <th colspan="2" bgcolor="#7bba99" style="padding-top: 10px;padding-bottom: 10px;" align="left">Workshop
+                Registration &nbsp&nbsp
+                <select style="border:none;background-color:#7bba99; ;" name="o" size="1">
+                    <option style="background-color: #7bba99;" value=" o1"> More Actions</option>
+                    <option style="background-color: #7bba99;" value=" o2">o2</option>
+                </select></td>
+            </th>
+        </tr>
+        <tr>
+            <td  style="padding-top: 10px; padding-bottom: 10px;padding-right: 10px;padding: 10px;">
+                <form>
+                    <table style="padding-top: 10px; padding-bottom: 10px;padding-right: 10px;padding: 10px;">
+                        <caption style="text-align:left;"><u>Register now while seats are available!</u>
+                        </caption>
+                        <tr>
+                            <th style="padding-top: 10px;padding-bottom: 10px;padding-left: 10px;" align="justify">
+                                <label class="req">First Name </label></th>
+                            <td style="padding-top: 10px;padding-bottom: 10px;padding-left: 10px;" align="justify">
+                                <input style="height: 25px;width:200px" type="textbox" name="fname" required></input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th style="padding-top: 10px;padding-bottom: 10px;padding-left: 10px;" align="justify">
+                                <label class="req">Lastt Name </label></th>
+                            <td style="padding-top: 10px;padding-bottom: 10px;padding-left: 10px;" align="justify">
+                                <input style="height: 25px;width:200px" type="textbox" name="lname" required></input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th style="padding-top: 10px;padding-bottom: 10px;padding-left: 10px;" align="justify">
+                                <label class="req">Company/Institution </label></th>
+                            <td style="padding-top: 10px;padding-bottom: 10px;padding-left: 10px;" align="justify">
+                                <input style="height: 25px;width:200px" type="textbox" name="com" required></input></td>
+                        </tr>
+                        <tr>
+                            <th style="padding-top: 10px;padding-bottom: 10px;padding-left: 10px;position: absolute;"
+                                align="justify">
+                                <label class="req">Address </label></th>
+                            <td style="padding-top: 10px;padding-bottom: 10px;padding-left: 10px;" align="justify">
+                                <input style="height: 100px;width:200px" type="textbox" name="fname" required></input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th style="padding-top: 10px;padding-bottom: 10px;padding-left: 10px;" align="justify">
+                                <label>City</label></th>
+                            <td style="padding-top: 10px;padding-bottom: 10px;padding-left: 10px;" align="justify">
+                                <input style="height: 25px;width:200px" type="textbox" name="city"></input></td>
+                        </tr>
+                        <tr>
+                            <th style="padding-top: 10px;padding-bottom: 10px;padding-left: 10px;" align="justify">
+                                <label for="country">State/Province/Region</label>
+                            </th>
+                            <td>
+                                &nbsp <select style="height: 25px;width:200px" name="pro" size="1" required>
+                                    <option>-Select-</option>
+                                    <option>Bangladesh</option>
+                                    <option>Turkey</option>
+
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <th style="padding-top: 10px;padding-bottom: 10px;padding-left: 10px;" align="justify">
+                                <label for="country">Country</label>
+                            </th>
+                            <td>
+                                &nbsp <select style="height: 25px;width:200px" name="country" size="1" required>
+                                    <option>-Select-</option>
+                                    <option>Bangladesh</option>
+                                    <option>Turkey</option>
+
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <th style="padding-top: 10px;padding-bottom: 10px;padding-left: 10px;" align="justify">
+                                <label class="req">Email </label></th>
+                            <td style="padding-top: 10px;padding-bottom: 10px;padding-left: 10px;" align="justify">
+                                <input style="height: 25px;width:200px" type="email"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" required></input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th style="padding-top: 10px;padding-bottom: 10px;padding-left: 10px;" align="justify">
+                                <label class="req">Phone Number </label></th>
+                            <td style="padding-top: 10px;padding-bottom: 10px;padding-left: 10px;" align="justify">
+                                <input style="height: 25px;width:200px" type="textbox" name="num" pattern="[0-9]{11}"
+                                    required></input>
+                            </td>
+                        </tr>
+                    </table>
+
+            </td>
+            <td style="padding-bottom:190px; padding-right: 10px;padding-left: 10px;" >
+                <table style="padding-top: 10px; padding-bottom: 10px;padding-right: 10px;padding: 10px;">
+                    <tr>
+                        <td style="padding-top: 5px;padding-bottom: 10px;padding-left: 10px;" align="left">
+                            <u>Lunch</u>
+                        </td>
+                        <td>&nbsp</td>
+                    </tr>
+                    <tr>
+                        <th style="padding-top: 5px;padding-bottom: 10px;padding-left: 10px;" align="left">
+                            <label for="meal">Meal Preference</label>
+                        </th>
+                        <td>
+                            &nbsp <select style="height: 25px;width:200px" name="country" size="1" align="right" required>
+                                <option>Vegetarian</option>
+                                <option>o1</option>
+                                <option>o2</option>
+
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td style="padding-top: 5px;padding-bottom: 10px;padding-left: 10px;" align="left"><u>Payment
+                                Details</u>
+                        </td>
+                        <td>&nbsp</td>
+                    </tr>
+                    <tr>
+                        <th style="position:absolute;padding-top: 5px;padding-bottom: 10px;padding-left: 10px;"
+                        align="left">
+                            <label for="meal">Payment Mode</label>
+                        </th>
+                        <td style="padding-top: 5px;padding-bottom: 10px;padding-left: 10px;" align="justify">
+                            <input type="checkbox">&nbsp Cash<br>
+                            <input type="checkbox">&nbsp Cheque<br>
+                            <input type="checkbox">&nbsp Demand Draft
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="padding-top: 5px;padding-bottom: 10px;padding-left: 10px;" align="left">
+                            <label>DD/Cheque No. </label></th>
+                        <td style="padding-top: 5px;padding-bottom: 10px;padding-left: 10px;" align="justify">
+                            <input style="height: 25px;width:200px" type="textbox" name="fname" required></input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="padding-top: 5px;padding-bottom: 10px;padding-left: 10px;"align="left">
+                            <label ">Drawn On(Bank Name) </label></th>
+                                    <td style=" padding-top: 5px;padding-bottom: 10px;padding-left: 10px;"
+                                align="justify">
+                                <input style="height: 25px;width:200px" type="textbox" name="bm" required></input></td>
+            </td>
+        </tr>
+        <tr>
+            <th style="padding-top: 5px;padding-bottom: 10px;padding-left: 10px;" align="left">
+                <label>Payable at </label></th>
+            <td style="padding-top: 5px;padding-bottom: 10px;padding-left: 10px;" align="left">
+                <input style="height: 25px;width:200px" type="textbox" name="p" required></input>
+            </td>
+        </tr>
+    </table>
+    </td>
+   
+    </tr>
+    <tr>
+        <td align="left" bgcolor="#cfcaca"colspan="2" style="padding-top: 10px;padding-bottom: 10px;" ><input style="margin-left:425px;" type="submit" name="Submit">
+            <input " type="reset" name="Reset"></td>
+
+    </tr>
+</form>
+
+    </table>
+
+</body>
+</div>
+</html>
